@@ -1,6 +1,7 @@
 const thumbWar = require('../thumb-war')
 const utilsMock = require('../utils')
 
+// this is key using mocks and require for esmodules
 jest.mock('../utils', () => {
   return {
     getWinner: jest.fn((p1, p2) => p1)
